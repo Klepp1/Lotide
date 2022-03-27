@@ -7,21 +7,16 @@ const assertEqual = function(actual, expected) {
 };
 
 const eqArrays = function(array1, array2) {
-  let x = 0;
-  let y = 0;
-  for (let i = 0; i < array1.length; i++) {
-    x += Math.round(array1[i])
-  }
-  for (let j = 0; j < array2.length; j++) {
-    y += Math.round(array2[j])
-  }
-  if (x === y) {
-    return true;
-  } else {
+  if (array1 === array2) return true;
+  if (array1.length !== array2.length) return false;
+for (let i = 0; i < array1.length; i++) {
+  if (array1[i] !== array2[i]) {
     return false;
-  }
+  } 
+}
+return true;
 };
 
-console.log(eqArrays([1, 2, 4], [1, 2, 4]));
+console.log(eqArrays([1, 2, 3], [1, 2, 2]));
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
