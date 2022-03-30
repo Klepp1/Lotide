@@ -10,7 +10,7 @@ const eqObjects = function(object1, object2) {
   const keyArr = Object.keys(object1);
   const keyArr2 = Object.keys(object2);
   if (keyArr.length !== keyArr2.length) {
-      return false;
+    return false;
   }
 
   for (const i in object1) {
@@ -19,9 +19,9 @@ const eqObjects = function(object1, object2) {
         return false;
       }
     } else {
-    names = keyArr[i]
+      const names = keyArr[i];
       if (object1[names] !== object2[names]) {
-          return false;
+        return false;
       }
     }
   }
@@ -41,7 +41,7 @@ const eqArrays = function(array1, array2) {
 
 const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
-eqObjects(ab, ba); 
+eqObjects(ab, ba);
 
 const abc = { a: "1", b: "2", c: "3" };
 eqObjects(ab, abc);

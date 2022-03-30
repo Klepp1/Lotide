@@ -5,10 +5,10 @@ const letterPositions = function(sentence) {
   for (let i = 0; i < sentence.length; i++) {
     if (sentence[i] !== " ") {
       if (results[sentence[i]] === undefined) {
-      results[sentence[i]] = [];
+        results[sentence[i]] = [];
       }
-    // {0: 0 + c}
-    results[sentence[i]].push(i)
+      // {0: 0 + c}
+      results[sentence[i]].push(i);
     }
   }
   return results;
