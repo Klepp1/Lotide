@@ -20,7 +20,7 @@ const eqObjects = function(object1, object2) {
       }
     } else {
       const names = keyArr[i];
-      if (object1[names] !== object2[names]) {
+      if (object1[i] !== object2[i]) {
         return false;
       }
     }
@@ -43,7 +43,7 @@ const ab = { a: "1", b: "2" };
 const ba = { b: "2", a: "1" };
 eqObjects(ab, ba);
 
-const abc = { a: "1", b: "2", c: "3" };
+const abc = { a: "1", b: "4"};
 eqObjects(ab, abc);
 
 const cd = { c: "1", d: ["2", 3] };
