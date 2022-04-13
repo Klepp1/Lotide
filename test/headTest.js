@@ -11,4 +11,4 @@ it('should return Hello for ["Hello", "Lighthouse", "Labs"]', () => {
 it('should return 4 for [4]', () => {
   assert.strictEqual(head([4]), 4);
 })
-})
+});
