@@ -1,12 +1,10 @@
-
 const without = function(arr, remove) {
-  let newArr = [];
-  for (let k = 0; k < arr.length; k++) {
-    if (arr[k] !== remove[k]) {
-      newArr.push(arr[k]);
+  const newArr = [];
+  for (let index of arr) {
+    if (index !== remove) {
+      newArr.push(index);
     }
   }
   return newArr;
 };
-
 module.exports = without;

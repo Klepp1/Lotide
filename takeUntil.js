@@ -1,5 +1,5 @@
 const takeUntil = function(arr, callback) {
-  let result = [];
+  const result = [];
   for (let i of arr) {
     if (callback(i)) {
       return result;

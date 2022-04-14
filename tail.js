@@ -1,5 +1,5 @@
 const tail = function(array) {
-  let newArray = [];
+  const newArray = [];
   for (let i = 1; i < array.length; i++) {
     newArray.push(array[i]);
   }
