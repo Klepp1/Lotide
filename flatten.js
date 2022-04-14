@@ -1,13 +1,12 @@
-
 const flatten = function(arr) {
-  let newArr = [];
-  for (let f = 0; f < arr.length; f++) {
-    if (Array.isArray(arr[f])) {
-      for (const d of arr[f]) {
-        newArr.push(d);
+  const newArr = [];
+  for (let index of arr) {
+    if (Array.isArray(index)) {
+      for (const nestedArr of index) {
+        newArr.push(nestedArr);
       }
     } else {
-      newArr.push(arr[f]);
+      newArr.push(index);
     }
   }
   console.log(newArr);

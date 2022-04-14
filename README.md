@@ -43,4 +43,4 @@ The following functions are currently implemented:
 * `map`: This function will take in an array and a callback it will change each element of the array based on the callback and return it in a new array.
 * `takeUntil`: This function will take in an array and a callback, it will push each item in the array into a new array until the condition inside the callback is met.
 * `without`: This function takes in an array and a value of what you dont want in the array, it will push everything into a new array except for the value you dont want.
-
+* `Index`: this file contains all above functions, Require it too obtain all.
